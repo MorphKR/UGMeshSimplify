@@ -1,0 +1,16 @@
+{
+    "name": "MeshSimplyfy",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5b69a80be223bc74b86e123b6f738945"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
