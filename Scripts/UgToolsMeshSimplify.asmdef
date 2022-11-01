@@ -1,5 +1,5 @@
 {
-    "name": "MeshSimplyfy",
+    "name": "UgToolsMeshSimplify",
     "rootNamespace": "",
     "references": [
         "GUID:5b69a80be223bc74b86e123b6f738945"

@@ -2,7 +2,11 @@
     "name": "MeshSimplifyEditor",
     "rootNamespace": "",
     "references": [
-        "GUID:033079b6538d44244aeef355896ef4f3"
+        "GUID:d14ed857634195d4291e8b118db2c0f4",
+        "GUID:00af4b5c330784340bf48969bdef1fff",
+        "GUID:02030ab5435e6b04db66c69c0d2aa8b6",
+        "GUID:0db6bae070c32154796ddefa33dfcf3d",
+        "GUID:4ca9402fc3bca2e47ba81675b1d9a814"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
