@@ -237,7 +237,9 @@ namespace UltimateGameTools
             {
                 m_meshOriginal = sourceMesh;
 
-                Vector3[] aVerticesWorld = GetWorldVertices(sourceMesh);
+                GameObject tempObj = new GameObject();
+
+                Vector3[] aVerticesWorld = GetWorldVertices(tempObj, sourceMesh);
 
                 if (aVerticesWorld == null)
                 {
@@ -690,18 +692,18 @@ namespace UltimateGameTools
                 return aVertices;
             }
 
-            public static Vector3[] GetWorldVertices(Mesh mesh)
+            public static Vector3[] GetWorldVertices(GameObject owner, Mesh mesh)
             {
-                GameObject tempObj = new GameObject();
-
                 Vector3[] aVertices = null;
 
                 aVertices = mesh.vertices;
 
                 for (int nVertex = 0; nVertex < aVertices.Length; nVertex++)
                 {
-                    aVertices[nVertex] = tempObj.transform.TransformPoint(aVertices[nVertex]);
-                }                
+                    aVertices[nVertex] = owner.transform.TransformPoint(aVertices[nVertex]);
+                }
+
+                DestroyImmediate(owner);
 
                 return aVertices;
             }
